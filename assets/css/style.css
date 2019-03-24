@@ -1,0 +1,30 @@
+
+header {
+    text-align: center;
+    font-size: 70px;
+}
+body {
+    background-image: url("https://images.template.net/wp-content/uploads/2014/11/background-music-notes.jpg");
+}
+
+
+#wrapper {
+ text-align: center;
+ box-sizing: border-box;
+ 
+}
+
+#subwrapper {
+    position: relative;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+button {
+    display: inline-block ;
+    width: 150px;
+    height: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+}
