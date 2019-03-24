@@ -60,7 +60,7 @@ var game = {
               game.counter--;
               $('#counter').html(game.counter);
 
-              if (game.counter === 0) {
+              if (game.counter <= 0) {
                      game.timeUp();
               }
 
@@ -70,7 +70,7 @@ var game = {
               counter = setInterval(game.countdown, 1000);
               panel.html('<h2>' + questions[this.current].question + '</h2>');
               for (var i = 0; i < questions[this.current].answers.length; i++) {
-                     panel.append('<input type="radio" name="" class="answer-button" id="button"' + 'data-name="' + questions[this.current].answers[i] + '">' + questions[this.current].answers[i] + '</button>');
+                     panel.append('<input type="radio" class="answer-button" id="button"' + 'data-name="' + questions[this.current].answers[i] + '">' + questions[this.current].answers[i] + '</input>');
               }
 
        },
@@ -89,9 +89,9 @@ var game = {
               panel.html("<h2>Time Is Up!</h2>");
 
               if (game.current === questions.length - 1) {
-                     setTimeout(game.results, 1 * 1000);
+                     setTimeout(game.results, 3 * 1000);
               } else {
-                     setTimeout(game.nextQuestion, 1 * 1000);
+                     setTimeout(game.nextQuestion, 3 * 1000);
               }
        },
 //this comes up at the end of the game and shows correct,incorrect and unaswered answer results and shows the restart button       
@@ -124,10 +124,10 @@ var game = {
               clearInterval(counter);
 
               if (game.current === questions.length - 1) {
-                     setTimeout(game.nextQuestion, 1 * 1000);
+                     setTimeout(game.nextQuestion, 3 * 1000);
               }
               else {
-                     setTimeout(game.nextQuestion, 1 * 1000);
+                     setTimeout(game.nextQuestion, 3 * 1000);
               }
        },
 //if correct answer clicked adds to the correct counter       
@@ -136,10 +136,10 @@ var game = {
               game.correct++;
 
               if (game.current === questions.length - 1) {
-                     setTimeout(game.results, 1 * 1000);
+                     setTimeout(game.results, 3 * 1000);
               }
               else {
-                     setTimeout(game.nextQuestion, 1 * 1000);
+                     setTimeout(game.nextQuestion, 3 * 1000);
               }
        },
  //this resets the whole game completely       

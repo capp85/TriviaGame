@@ -5,6 +5,9 @@ header {
 }
 body {
     background-image: url("https://images.template.net/wp-content/uploads/2014/11/background-music-notes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -21,10 +24,16 @@ h2 {
     font-size: 35px;
     margin-bottom: 20px;
 }
+h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
 button {
-    display: inline-block ;
+    display: block ;
     width: 150px;
-    height: 25px;
-    margin: 0 auto;
-    cursor: pointer;
+    height: 28px;
+    margin: 2px auto;
+    background: royalblue;
+    color: gold;
+
 }
