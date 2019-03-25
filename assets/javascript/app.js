@@ -29,7 +29,7 @@ $(document).on('click', '#restart', function (e) { //restartbutton
 
 // questions,answers and correct answers array
 var questions = [{
-       question: "Badley Nowell was the guitarist/singer for what band?",
+       question: "Bradley Nowell was the guitarist/singer for what band?",
        answers: ["Nirvana", "Stone Temple Pilots", "Radiohead", "Sublime"],
        correctAnswer: "Sublime"
 },
